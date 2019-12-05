@@ -3,19 +3,19 @@ package com.udacity.sandwichclub;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.udacity.sandwichclub.model.Sandwich;
 import com.udacity.sandwichclub.utils.JsonUtils;
-import com.udacity.sandwichclub.utils.ListAdapter;
+import com.udacity.sandwichclub.utils.RecyclerAdapter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RecyclerAdapter.OnListItemClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,19 +28,19 @@ public class MainActivity extends AppCompatActivity {
             Sandwich sandwich = JsonUtils.parseSandwichJson(json);
             sandwichesList.add(sandwich);
         }
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
-//                android.R.layout.simple_list_item_1, sandwiches);
-        ListAdapter adapter = new ListAdapter(this, sandwichesList);
-
+       RecyclerAdapter adapter = new RecyclerAdapter(this);
+        adapter.setSandwichList(sandwichesList);
         // Simplification: Using a ListView instead of a RecyclerView
-        ListView listView = findViewById(R.id.sandwiches_listview);
-        listView.setAdapter(adapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                launchDetailActivity(position);
-            }
-        });
+        RecyclerView recyclerView = findViewById(R.id.sandwiches_recView);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public void onItemClick(int itemPosition) {
+        launchDetailActivity(itemPosition);
     }
 
     private void launchDetailActivity(int position) {

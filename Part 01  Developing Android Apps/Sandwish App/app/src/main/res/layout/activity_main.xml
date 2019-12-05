@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     tools:context="com.udacity.sandwichclub.MainActivity">
 
-    <ListView
-        android:id="@+id/sandwiches_listview"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sandwiches_recView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
+
 
 </RelativeLayout>

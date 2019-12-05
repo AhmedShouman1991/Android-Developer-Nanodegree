@@ -30,7 +30,7 @@
             android:maxLines="1"
             android:textAllCaps="true"
             android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             tools:text="Main Sandwich" />
 
@@ -58,4 +58,11 @@
         android:layout_margin="8dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dadada"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
