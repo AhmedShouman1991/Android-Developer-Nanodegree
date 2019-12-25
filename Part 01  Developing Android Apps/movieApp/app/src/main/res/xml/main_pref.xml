@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_show_new_movies_notification_default"
+        android:key="@string/show_notification_key"
+        android:summaryOff="Disabled"
+        android:summaryOn="Enabled"
+        android:title="@string/show_notification_title"
+        app:icon="@drawable/ic_alarm"/>
+
+    <ListPreference
+        android:defaultValue="@string/theme_dark_value"
+        android:entries="@array/themes_labels"
+        android:entryValues="@array/themes_values"
+        android:key="@string/select_theme_list_key"
+        android:title="@string/select_theme_list_title"
+        app:icon="@drawable/ic_theme"/>
+</PreferenceScreen>

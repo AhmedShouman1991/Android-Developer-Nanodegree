@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1ed761</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#616161</color>
+
+
+
+
+    /////MainActivity colors
+    <color name="movies_list_background_color_dark">@color/dark</color>
+    <color name="movies_list_background_color_light">@color/light</color>
+    /////
+
+    ////ListItem Colors
+    <color name="movie_item_info_box_color_dark">@color/dark</color>
+    <color name="movie_item_info_box_color_light">#90A4AE</color>
+    <color name="movie_item_label_and_rate_color_dark">#FFFFFF</color>
+    <color name="movie_item_label_and_rate_color_light">#000000</color>
+    <color name="rating_stars_color_not_activated">#A5D6A7</color>
+    <color name="rating_stars_color_activated">@color/colorPrimary</color>
+    ///////
+    <color name="dark">#000000</color>
+    <color name="light">#ffffff</color>
+
+    ////DetailsActivity Colors
+    <color name="movie_details_rating_number_light">#212121</color>
+    <color name="movie_details_rating_number_dark">#FAFAFA</color>
+    <color name="overview_fixed_color_light">@color/dark</color>
+    <color name="overview_fixed_color_dark">@color/light</color>
+    <color name="movie_details_overview_light">#546E7A</color>
+    <color name="movie_details_overview_dark">#ECEFF1</color>
+    <color name="movie_header_color">#C2185B</color>
+    <color name="overview_under_line_color">#A5D6A7</color>
+    <color name="details_background_light">@color/light</color>
+    <color name="details_background_dark">@color/dark</color>
+    ///////
+
+</resources>
