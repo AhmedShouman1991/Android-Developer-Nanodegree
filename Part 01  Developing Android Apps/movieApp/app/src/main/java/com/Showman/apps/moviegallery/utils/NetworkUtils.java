@@ -31,12 +31,11 @@ public class NetworkUtils {
 
     private static final String TOP_RATED = "top_rated";
 
-    private final static String MOVIE_TRAILER = "http://api.themoviedb.org/3/movie/181812/videos?api_key=abf57d3ada45e93389b9e4cf3b6eabe6";
-    //"https://api.themoviedb.org/3/movie/181821?api_key=abf57d3ada45e93389b9e4cf3b6eabe6&language=en-US"
+    private final static String MOVIE_TRAILER = "http://api.themoviedb.org/3/movie/181812/videos?api_key=";
 
     private static final String API_KEY = "api_key";
 
-    private static final String KEY_VALUE = "abf57d3ada45e93389b9e4cf3b6eabe6";
+    private static final String KEY_VALUE = "";
 
     public static URL getUrl(int findBy) {
 
