@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Movies Gallery</string>
+    <string name="error_msg">Connection error, Please try again</string>
+    <string name="notify_msg">New Movies Released Check It Now</string>
+    <string name="sort_by_popularity">By Popularity</string>
+    <string name="sort_by_top_rated">By Top Rated</string>
+    <string name="sort_by_top_favorite">My Favorites</string>
+    <string name="settings_activity">Settings</string>
+
+
+    <string name="test_overview_text">this movie wes a great movie to watch in this whole year i think you should watch it as soon as possible</string>
+    <string name="test_rating">7.5</string>
+    <string name="test_release_date">15-10-2019</string>
+    <string name="test_movie_title">Dead Pool 2</string>
+    <string name="test_movie_genre">Action, Comedy, Adventure</string>
+
+    <string name="movie_background_img">movie background</string>
+    <string name="movie_poster">movie poster</string>
+    <string name="grid_list_item_poster">movie poster</string>
+
+    <string name="movie_fixed_overview">Overview</string>
+    <string name="movie_fixed_trailer">Trailer</string>
+    <string name="movie_fixed_reviews">Reviews</string>
+
+
+    /////preference
+    <string name="show_notification_key" translatable="false">notifyMe</string>
+    <string name="show_notification_title">New Movies Notification</string>
+
+
+    <string name="select_theme_list_key" translatable="false">themeMe</string>
+    <string name="select_theme_list_title">Theme</string>
+    <string name="theme_dark_title">Dark</string>
+    <string name="theme_light_title">Light</string>
+
+    <string name="theme_dark_value">dark_colors</string>
+    <string name="theme_light_value">light_colors</string>
+
+
+</resources>

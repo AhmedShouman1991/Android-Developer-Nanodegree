@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusable="true"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/list_item_movie_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/grid_list_item_poster"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/dead_pool2" />
+
+    <LinearLayout
+        android:id="@+id/movie_info_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/list_item_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/movie_details_rating_number_light"
+            android:textSize="16sp"
+            tools:text="Dead Pool 2" />
+
+        <TextView
+            android:id="@+id/list_item_movie_genre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-light"
+            android:maxLines="1"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/movie_details_rating_number_light"
+            android:textSize="12sp"
+            tools:text="Dead Pool 2" />
+
+        <RatingBar
+                android:id="@+id/list_item_rating_bar"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:progressDrawable="@drawable/my_rating"
+                android:layout_gravity="bottom"
+                android:rating="5"
+                android:isIndicator="true"
+                />
+        <!--            android:theme="@style/RatingBar"-->
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_offset">3dp</dimen>
+
+    //////mainActivity
+    <dimen name="error_msg_padding">10dp</dimen>
+    <dimen name="progress_bar_size">42dp</dimen>
+    //////
+
+    /////detailsActivity
+    <dimen name="toolbar_dim">8dp</dimen>
+    <dimen name="movie_poster_height">112dp</dimen>
+    <dimen name="movie_poster_width">100dp</dimen>
+    <dimen name="movie_poster_horizontal_margin">10dp</dimen>
+    <dimen name="movie_poster_vertical_margin">10dp</dimen>
+    <dimen name="rating_linear_margin">10dp</dimen>
+    <dimen name="rating_bar_horizontal_margin">5dp</dimen>
+</resources>
